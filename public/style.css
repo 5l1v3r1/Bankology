@@ -40,3 +40,8 @@ section > div {
 #lesson {
     padding: 50px;
 }
+
+/*  Login */
+input[type=text], input[type=password]{
+  padding: 10px 10px;
+}
