@@ -1,0 +1,42 @@
+:root {
+    --dark-color: #222;
+    --light-color: #eee;
+    --accent-color: aquamarine;
+}
+
+body {
+    margin: 0;
+    background-color: var(--light-color);
+    color: var(--dark-color);
+}
+
+nav {
+    background-color: var(--dark-color);
+    color: var(--light-color);
+    height: 3em;
+    width: 100%;
+    text-align: center;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+nav > a {
+    margin-top: 1em;
+    display: inline-block;
+    width: 20%;
+    text-decoration: none;
+    color: var(--accent-color);
+}
+
+section {
+    display: flex;
+}
+
+section > div {
+    flex: 1 1 0px;
+    padding: 20px;
+}
+
+#lesson {
+    padding: 50px;
+}
