@@ -118,10 +118,10 @@
       "question": "What is budgeting?",
       "answers": {
         "0": "Budgeting is making sure that you divide your income properly.",
-        "1": "It is spending way to little on needs and too much on wants.",
+        "1": "It is spending way too little on needs and too much on wants.",
         "2": "It is creating a schedule to buy your groceries."
       },
-      "answer": 1,
+      "answer": 0,
       "explanation": "Budgeting is dividing your income properly."
     }
   }

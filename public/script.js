@@ -9,6 +9,9 @@ $(function() {
 });
 
 function loadQuestion(n) {
+  $("#quiz").append(`
+  <h1> Loading... </h1>
+  `)
   var url = window.location.href.split('/').pop().split('.')[0];
   $.ajax({
     datatype: "json",
@@ -18,8 +21,8 @@ function loadQuestion(n) {
       url: url
     },
     success: function(data) {
+      $("#quiz").empty()
       if(data.none){
-        $("#quiz").empty()
         $("#quiz").append(`
           <h1>Congrats</h1>
           <p>You reached the end</p>
@@ -41,7 +44,6 @@ function loadQuestion(n) {
         <label for='${i}'>${answers[i]}</label><br>`;
       }
       inputs += `<p id='message'></p>`
-      $("#quiz").empty();
       $("#quiz").append(`<form action='/quiz' method='POST'>
       <h1>${question}</h1>
       ${inputs}
