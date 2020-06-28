@@ -76,6 +76,11 @@ app.get('/logout',(req,res)=>{
   res.redirect('/')
 })
 
+app.get('/quiz', (req,res)=> {
+  const quiz = require('./quizzes.json')
+  res.send(quiz[req.query.url][req.query.n])
+})
+
 app.listen(port,()=>{
   console.log(`Listening on port ${port}`)
 })

@@ -1,5 +1,6 @@
+
 :root {
-    --dark-color: #222;
+    --dark-color: white;
     --light-color: #eee;
     --accent-color: aquamarine;
 }
@@ -11,8 +12,8 @@ body {
 }
 
 nav {
-    background-color: var(--dark-color);
-    color: var(--light-color);
+    background-color: black;
+    color: black;
     height: 3em;
     width: 100%;
     text-align: center;
@@ -51,7 +52,40 @@ section > div {
     padding: 50px;
 }
 
+footer{
+  position: fixed;
+  bottom: 0;
+}
+
 /*  Login */
 input[type=text], input[type=password]{
   padding: 10px 10px;
+}
+
+#quiz {
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 10px;
+    vertical-align: middle;
+}
+
+label {
+    display: inline-block;
+    width: 50%;
+    margin: 5px auto;
+    background-color: #ddd;
+    border-radius: 20px;
+}
+
+label:hover {
+    background-color: #bbb;
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+input[type="radio"]:checked+label {
+    background-color: #bbb;
 }
