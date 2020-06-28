@@ -72,7 +72,6 @@ function loadQuestion(n) {
     error: function(xhr, status, error) {
       console.error(xhr)
       console.error(error)
-      $("#quiz").append('<p> Looks like you completed all the questions! Good job!</p>')
     }
   });
 }
