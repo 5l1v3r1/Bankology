@@ -37,6 +37,9 @@ nav > a {
   display: inline-block;
   width: 20%;
   text-decoration: none;
+}
+
+a {
   color: var(--accent-color);
 }
 
