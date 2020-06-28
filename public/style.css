@@ -1,32 +1,52 @@
-
 :root {
-    --dark-color: white;
-    --light-color: #eee;
-    --accent-color: aquamarine;
+  --dark-color: white;
+  --light-color: #eee;
+  --accent-color: aquamarine;
+}
+
+html {
+  height: 100%;
 }
 
 body {
-    margin: 0;
-    background-color: var(--light-color);
-    color: var(--dark-color);
+  background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://cdn.discordapp.com/attachments/725789199932063786/726883899497513020/19744.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: auto 100%;
+
+  margin: 0;
+  color: var(--dark-color);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+footer{
+  background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://cdn.discordapp.com/attachments/725789199932063786/726883899497513020/19744.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+body p {
+  color: white;
+  font-size: 25px;
 }
 
 nav {
-    background-color: black;
-    color: black;
-    height: 3em;
-    width: 100%;
-    text-align: center;
-    display: inline-block;
-    vertical-align: middle;
+  background-color: black;
+  color: black;
+  height: 3em;
+  width: 100%;
+  text-align: center;
+  display: inline-block;
+  vertical-align: middle;
 }
 
 nav > a {
-    margin-top: 1em;
-    display: inline-block;
-    width: 20%;
-    text-decoration: none;
-    color: var(--accent-color);
+  margin-top: 1em;
+  display: inline-block;
+  width: 20%;
+  text-decoration: none;
+  color: var(--accent-color);
 }
 
 #login{
@@ -63,29 +83,53 @@ input[type=text], input[type=password]{
 }
 
 #quiz {
-    width: 50%;
-    margin: 0 auto;
-    text-align: center;
-    padding: 10px;
-    vertical-align: middle;
+  width: 50%;
+  margin: 0 auto;
+  text-align: center;
+  vertical-align: middle;
+  padding: 10px 10px;
+  background-color: white;
+  border: 1px solid;
+  border-radius: 10px 10px;
+  color: black;
+}
+
+#quiz p {
+  color: black;
 }
 
 label {
-    display: inline-block;
-    width: 50%;
-    margin: 5px auto;
-    background-color: #ddd;
-    border-radius: 20px;
+  display: inline-block;
+  width: 50%;
+  margin: 5px auto;
+  background-color: #ddd;
+  border-radius: 20px;
+  padding: 10px;
+  cursor: pointer;
+  
 }
 
 label:hover {
-    background-color: #bbb;
+  background-color: #aaa;
 }
 
 input[type="radio"] {
-    display: none;
+  display: none;
 }
 
 input[type="radio"]:checked+label {
-    background-color: #bbb;
+  background-color: #aaa;
+}
+
+.correct {
+  background-color: darkseagreen !important;
+}
+
+.incorrect {
+  background-color: indianred !important;
+}
+
+.lessonimg {
+  width: 100%;
+  height: auto;
 }
